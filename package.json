@@ -1,0 +1,25 @@
+{
+  "name": "restaurantpage",
+  "version": "1.0.0",
+  "description": "A restaurant page for the Odin Project modeled for a local business",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IsaacWild/restaurantPage.git"
+  },
+  "author": "Isaac Sutton-Wild",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaacWild/restaurantPage/issues"
+  },
+  "homepage": "https://github.com/IsaacWild/restaurantPage#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
