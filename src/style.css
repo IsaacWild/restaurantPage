@@ -13,7 +13,7 @@ body{
 
 .pageWrapper{
     display: grid;
-    font-family: 'Kaushan Script', cursive;
+    grid-template-rows: repeat(3, auto) 1fr auto;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -50,6 +50,7 @@ body{
     grid-template-columns: 0.5fr repeat(2, 1fr);
     color:hsl(8,60%,20%);
     text-decoration: underline;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .titleWrapper p{
@@ -58,13 +59,28 @@ body{
 
 .sectionWrapper{
     width: 100vw;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    justify-items:center;
+    align-items: center; 
 }
 
+.menuImage{
+    height: 6rem;
+    width: 6rem;
+}
 
-.title{
-    display: flexbox;
-    font-family: 'Kaushan Script', cursive;
-    color: hsl(8, 90%, 55%);
-    font-size: 2rem;
-    padding-top: 1rem;
+.menuSectionLink{
+    padding: 1rem;
+    font-size: 1.5rem;
+    outline: solid black;
+}
+
+.footerWrapper{
+    font-size: 14px;
+    grid-row: 4/5;
+    margin-top: auto;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(4, 23%, 86%);
 }
