@@ -43,6 +43,19 @@ body{
     text-shadow: 3px 3px hsl(0, 0%, 0%);
 }
 
+.titleWrapper{
+    padding: 1.5rem 1rem 1rem;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr);
+    color:hsl(8,60%,20%);
+    text-decoration: underline;
+}
+
+.titleWrapper p{
+    margin:0;
+}
+
 .sectionWrapper{
     width: 100vw;
 }
