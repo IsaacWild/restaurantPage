@@ -2,29 +2,38 @@ import './style.css'
 import Icon from './dragonIcon.svg';
 
 //this is where my site will be born!
-const pageContent = document.querySelector("#content");
-const pageWrapper = document.createElement('div');
-pageWrapper.classList.add('pageWrapper');
-pageContent.appendChild(pageWrapper);
+//Div overlay layout
+const pageWrapper = document.querySelector("#content");
+const headerWrapper = document.createElement('div');
+const titleWrapper = document.createElement('div');
+const menuWrapper = document.createElement('div');
+const findUsWrapper = document.createElement('div');
+const contactWrapper = document.createElement('div');
+const footerWrapper = document.createElement('div');
 
-const header = document.createElement('div');
-header.classList.add('header');
-pageWrapper.appendChild(header);
 
+//add classes
+pageWrapper.classList.add('pageWrapper')
+headerWrapper.classList.add('headerWrapper');
+titleWrapper.classList.add('headerWrapper');
+menuWrapper.classList.add('sectionWrapper');
+findUsWrapper.classList.add('sectionWrapper');
+contactWrapper.classList.add('sectionWrapper');
+footerWrapper.classList.add('footerWrapper');
+
+//Append time!
+pageWrapper.append(headerWrapper,titleWrapper,menuWrapper,findUsWrapper,contactWrapper,footerWrapper);
+
+//headerWrapper Childern - logo
 const myIcon = new Image();
 myIcon.src = Icon;
-const logo = document.createElement('div');
-const title = document.createElement('div');
-const facebook = document.createElement('div');
-myIcon.classList.add('icon')
-logo.classList.add('logo');
-title.classList.add('title');
-facebook.classList.add('facebook')
+myIcon.classList.add('icon');
+const name = document.createElement('p');
+name.classList.add('name');
+name.textContent = 'Long Yuen Court';
+headerWrapper.append(myIcon, name);
 
-header.append(logo, facebook, title);
-logo.appendChild(myIcon);
 
-title.textContent = 'Welcome to Long Yuen Court';
 
 
 //make footer with (Icons by svgrepo.com) link to https://www.svgrepo.com/
