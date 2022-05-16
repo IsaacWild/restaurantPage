@@ -80,8 +80,8 @@ menuImage.classList.add('menuImage')
 menuSectionLink.classList.add('menuSectionLink')
 //Add content
 menuTitle.textContent = 'Our Menu'
-menuMessage.textContent = "Our menu offers a large range of dishes hand crafted by our chef's and celibrated by our customers"
-menuSectionLink.textContent = 'MENU'
+menuMessage.textContent = 'Our menu offers a large range of dishes hand crafted by our chefs and celebrated by our customers'
+menuSectionLink.textContent = 'VIEW MENU'
 menuSectionLink.addEventListener('click', () => {
     removeChildren()
     menuPage()
@@ -97,8 +97,8 @@ menuWrapper.append(menuTitle, menuImage, menuMessage, menuSectionLink)
 //contactUsWrapper Children - Title, Pic, Message, Link
 
 
-//footerWrapper Children - footer
-// const footer = document.createElement('a')
-// footer.textContent = 'Icons by svgrepo.com'
-// footer.href = 'https://www.svgrepo.com/'
-// footerWrapper.appendChild(footer)
+// footerWrapper Children - footer
+const footer = document.createElement('a')
+footer.textContent = 'Icons by svgrepo.com'
+footer.href = 'https://www.svgrepo.com/'
+footerWrapper.appendChild(footer)
