@@ -34,6 +34,11 @@ body{
     padding: 0.8rem 0rem 0.5rem;
 }
 
+.icon:hover{
+    transform: rotate(8deg);
+    transition: 0.6s;
+}
+
 .name{
     font-family: 'Kaushan Script', cursive;
     color: hsl(4, 70%, 98%);
@@ -55,6 +60,14 @@ body{
 
 .titleWrapper p{
     margin:0;
+    cursor: pointer;
+}
+
+.titleWrapper p:hover{
+    margin:0;
+    color: hsl(8,60%,48%);
+    text-shadow: 1px 1px hsl(0, 0%, 0%);
+    transition: 0.3s;
 }
 
 .sectionWrapper{
@@ -78,6 +91,13 @@ body{
     padding: 1rem;
     font-size: 1.5rem;
     outline: solid black;
+    cursor: pointer;
+}
+
+.pageLink:hover{
+    background-color: hsl(8,60%,20%);
+    color: hsl(4, 23%, 100%);
+    transition: 0.3s;
 }
 
 .footerWrapper{

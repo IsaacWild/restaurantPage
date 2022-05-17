@@ -1,4 +1,5 @@
 import './style.css'
+import "./menu.css"
 import Icon from './dragonIcon.svg';
 import menuIcon from './menuIcon.svg'
 import findIcon from './findIcon.svg'
@@ -48,6 +49,7 @@ const menuLink = document.createElement('p')
 menuLink.textContent = 'Menu'
 menuLink.addEventListener('click', () => {
     removeChildren()
+    menuPage()
 })
 const findUsLink = document.createElement('p')
 findUsLink.textContent = 'Find Us'
@@ -104,7 +106,6 @@ findMessage.textContent = "Located in the cozy village of Little Paxton you'll f
 findSectionLink.textContent = 'SEE LOCATION'
 findSectionLink.addEventListener('click', () => {
     removeChildren()
-    menuPage()
 })
 //Append Time
 findUsWrapper.append(findTitle, findImage, findMessage, findSectionLink)
