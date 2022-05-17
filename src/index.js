@@ -76,8 +76,8 @@ menuImage.src = menuIcon;
 const menuMessage = document.createElement('p')
 const menuSectionLink = document.createElement('p')
 //Add style
-menuImage.classList.add('menuImage')
-menuSectionLink.classList.add('menuSectionLink')
+menuImage.classList.add('pageIcon')
+menuSectionLink.classList.add('pageLink')
 //Add content
 menuTitle.textContent = 'Our Menu'
 menuMessage.textContent = 'Our menu offers a large range of dishes hand crafted by our chefs and celebrated by our customers'
@@ -89,12 +89,46 @@ menuSectionLink.addEventListener('click', () => {
 //Append Time
 menuWrapper.append(menuTitle, menuImage, menuMessage, menuSectionLink)
 
-
-
-
 //findUsWrapper Children - Title, Pic, Message, Link
+const findTitle = document.createElement('h1')
+const findImage = new Image();
+findImage.src = findIcon;
+const findMessage = document.createElement('p')
+const findSectionLink = document.createElement('p')
+//Add style
+findImage.classList.add('pageIcon')
+findSectionLink.classList.add('pageLink')
+//Add content
+findTitle.textContent = 'Find Us'
+findMessage.textContent = "Located in the cozy village of Little Paxton you'll find a warm welcome from us here everytime!"
+findSectionLink.textContent = 'SEE LOCATION'
+findSectionLink.addEventListener('click', () => {
+    removeChildren()
+    menuPage()
+})
+//Append Time
+findUsWrapper.append(findTitle, findImage, findMessage, findSectionLink)
+
 
 //contactUsWrapper Children - Title, Pic, Message, Link
+const contactTitle = document.createElement('h1')
+const contactImage = new Image()
+contactImage.src = contactIcon;
+const contactMessage = document.createElement('p')
+const contactSectionLink = document.createElement('p')
+//Add style
+contactImage.classList.add('pageIcon')
+contactSectionLink.classList.add('pageLink')
+//Add content
+contactTitle.textContent = 'Contact Us'
+contactMessage.textContent = "Trying to chat with us? Give us a call to book a table or place a takeaway with us!"
+contactSectionLink.textContent = 'OUR NUMBER'
+contactSectionLink.addEventListener('click', () => {
+    removeChildren()
+    menuPage()
+})
+//Append Time
+contactWrapper.append(contactTitle, contactImage, contactMessage, contactSectionLink)
 
 
 // footerWrapper Children - footer

@@ -62,15 +62,19 @@ body{
     display: grid;
     font-family: 'Roboto', sans-serif;
     justify-items:center;
-    align-items: center; 
+    align-items: center;
 }
 
-.menuImage{
+.sectionWrapper p {
+    margin: 1rem;
+}
+
+.pageIcon{
     height: 6rem;
     width: 6rem;
 }
 
-.menuSectionLink{
+.pageLink{
     padding: 1rem;
     font-size: 1.5rem;
     outline: solid black;
