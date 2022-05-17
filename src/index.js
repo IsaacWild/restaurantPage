@@ -1,11 +1,16 @@
 import './style.css'
-import "./menu.css"
+import './menu.css'
+import './findUs.css'
+import './contact.css'
 import Icon from './dragonIcon.svg';
 import menuIcon from './menuIcon.svg'
 import findIcon from './findIcon.svg'
 import contactIcon from './contactIcon.svg'
 
+
 import menuPage from './menu';
+import findUsPage from './findUs';
+import contactPage from './contact';
 
 //this is where my site will be born!
 //Div overlay layout
@@ -55,11 +60,13 @@ const findUsLink = document.createElement('p')
 findUsLink.textContent = 'Find Us'
 findUsLink.addEventListener('click', () => {
     removeChildren()
+    findUsPage()
 })
 const contactLink = document.createElement('p')
 contactLink.textContent = 'Contact Us'
 contactLink.addEventListener('click', () => {
     removeChildren()
+    contactPage()
 })
 
 titleWrapper.append(menuLink, findUsLink, contactLink)
@@ -106,6 +113,7 @@ findMessage.textContent = "Located in the cozy village of Little Paxton you'll f
 findSectionLink.textContent = 'SEE LOCATION'
 findSectionLink.addEventListener('click', () => {
     removeChildren()
+    findUsPage()
 })
 //Append Time
 findUsWrapper.append(findTitle, findImage, findMessage, findSectionLink)
@@ -126,7 +134,7 @@ contactMessage.textContent = "Trying to chat with us? Give us a call to book a t
 contactSectionLink.textContent = 'OUR NUMBER'
 contactSectionLink.addEventListener('click', () => {
     removeChildren()
-    menuPage()
+    contactPage()
 })
 //Append Time
 contactWrapper.append(contactTitle, contactImage, contactMessage, contactSectionLink)

@@ -76,6 +76,7 @@ body{
     font-family: 'Roboto', sans-serif;
     justify-items:center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .sectionWrapper p {

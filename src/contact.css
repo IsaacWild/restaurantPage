@@ -1,0 +1,9 @@
+.hoursWrapper{
+    display: grid;
+    padding: 1rem;
+}
+
+.facebook{
+    cursor: pointer;
+    
+}

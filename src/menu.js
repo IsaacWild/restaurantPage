@@ -1,6 +1,5 @@
 function menuPage() {
-    //make menu page
-    console.log('test')
+    //make menu page layout
     const removableSections = document.querySelector('.removableSections')
     const contentTitle = document.createElement('h1')
     const crispyTitleWrapper = document.createElement('div')
