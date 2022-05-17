@@ -82,7 +82,7 @@ menuImage.classList.add('pageIcon')
 menuSectionLink.classList.add('pageLink')
 //Add content
 menuTitle.textContent = 'Our Menu'
-menuMessage.textContent = 'Our menu offers a large range of dishes hand crafted by our chefs and celebrated by our customers'
+menuMessage.textContent = 'Our menu offers a large range of dishes hand crafted by our chefs and celebrated by our customers!'
 menuSectionLink.textContent = 'VIEW MENU'
 menuSectionLink.addEventListener('click', () => {
     removeChildren()
