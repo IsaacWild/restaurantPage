@@ -7,6 +7,7 @@ function contactPage() {
     //make find us page layout
     const contactTitle = document.createElement('h1')
     const number = document.createElement('h2')
+    const numberMessage = document.createElement('h3')
     const hoursWrapper = document.createElement('div')
     const facebookWrapper = document.createElement('div')
     const facebook = new Image();
@@ -21,6 +22,7 @@ function contactPage() {
     //add content
     contactTitle.textContent = 'Give us a call!'
     number.textContent = '01480 473322'
+    numberMessage.textContent = 'Call us to book a table or order a takeaway today!'
     facebook.src = facebookIcon;
     let hours = ['Closed Tuesday!','Mon - Sat: 6pm - 10.30pm', 'Sunday: 12pm - 9.30pm', 'Open Bank Holidays!']
 
@@ -35,7 +37,7 @@ function contactPage() {
     })
 
     //append
-    removableSections.append(contactTitle, hoursWrapper, number, facebookWrapper)
+    removableSections.append(contactTitle, number, numberMessage, hoursWrapper, facebookWrapper)
     facebookWrapper.appendChild(facebook)
 }
 

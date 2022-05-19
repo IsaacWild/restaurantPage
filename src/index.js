@@ -2,7 +2,7 @@ import './style.css'
 import './menu.css'
 import './findUs.css'
 import './contact.css'
-import Icon from './dragonIcon.svg';
+import Icon from './logo.jpg';
 import menuIcon from './menuIcon.svg'
 import findIcon from './findIcon.svg'
 import contactIcon from './contactIcon.svg'

@@ -29,6 +29,7 @@ body{
 .headerWrapper{
     width: 100%;
     display:grid;
+    grid-template-columns: 1fr;
     justify-items:center;
     align-items: center; 
     background-color: hsl(8,60%,48%);
@@ -37,14 +38,9 @@ body{
 }
 
 .icon{
-    height: 7rem;
-    width: 7rem;
+    height: 9rem;
+    width: 9rem;
     padding: 0.8rem 0rem 0.5rem;
-}
-
-.icon:hover{
-    transform: rotate(8deg);
-    transition: 0.6s;
 }
 
 .name{
@@ -57,13 +53,17 @@ body{
 }
 
 .titleWrapper{
-    padding: 1.5rem 1rem 1rem;
+    margin: 1.5rem 1rem 1rem;
+    width: 100%;
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
     color:hsl(8,60%,20%);
     text-decoration: underline;
     font-family: 'Kaushan Script', cursive;
+    justify-self: center;
+
 }
 
 .titleWrapper p{
@@ -79,7 +79,6 @@ body{
 }
 
 .sectionWrapper{
-    /* width: 100vw; */
     display: grid;
     font-family: 'Roboto', sans-serif;
     justify-items:center;
