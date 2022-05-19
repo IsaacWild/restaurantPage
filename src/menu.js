@@ -17,7 +17,7 @@ function menuPage() {
 
     //add content
     contentTitle.textContent = 'Our Menu'
-    crispyTitle.textContent = "Cripsy Noodle's"
+    crispyTitle.textContent = "Cripsy Noodles"
     chowMeinTitle.textContent = 'Chow Mein'
 
     //append
