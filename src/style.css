@@ -60,7 +60,6 @@ body{
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 1fr;
     color:hsl(8,60%,20%);
-    text-decoration: underline;
     font-family: 'Kaushan Script', cursive;
     justify-self: center;
 
