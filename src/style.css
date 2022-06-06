@@ -39,7 +39,7 @@ body{
 
 .icon{
     height: 9rem;
-    width: 9rem;
+    width: 12rem;
     padding: 0.8rem 0rem 0.5rem;
 }
 
@@ -114,4 +114,6 @@ body{
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
     background-color: hsl(4, 23%, 86%);
+    display: grid;
+    grid-gap: 0.5em;
 }

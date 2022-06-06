@@ -2,7 +2,7 @@ import './style.css'
 import './menu.css'
 import './findUs.css'
 import './contact.css'
-import Icon from './logo.jpg';
+import Icon from './logo.png';
 import menuIcon from './menuIcon.svg'
 import findIcon from './findIcon.svg'
 import contactIcon from './contactIcon.svg'
@@ -141,7 +141,11 @@ contactWrapper.append(contactTitle, contactImage, contactMessage, contactSection
 
 
 // footerWrapper Children - footer
-const footer = document.createElement('a')
-footer.textContent = 'Icons by svgrepo.com'
-footer.href = 'https://www.svgrepo.com/'
-footerWrapper.appendChild(footer)
+const footer1 = document.createElement('a')
+const footer2 = document.createElement('a')
+
+footer1.textContent = 'Website Created by Isaac Sutton-Wild'
+footer2.textContent = 'Icons by svgrepo.com'
+footer2.href = 'https://www.svgrepo.com/'
+footer1.href = 'https://github.com/IsaacWild/restaurantPage'
+footerWrapper.append(footer1, footer2)

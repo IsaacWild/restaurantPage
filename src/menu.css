@@ -4,9 +4,23 @@
     grid-auto-flow: row;
     padding: 0rem 2rem 2rem;
     align-items: center;
-  }
+}
   
-  .subMenuTitle{
+.subMenuTitle{
     margin-top:2rem;
     margin-bottom: 1rem;
-  }
+}
+
+.menuWrapper{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 700px));
+  padding: 1rem;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+.menuPage{
+  width: 100%;
+  max-width: 800px;
+}
