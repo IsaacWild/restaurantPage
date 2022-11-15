@@ -15,6 +15,7 @@ function contactPage() {
     //add classes
     contactTitle.classList.add('subMenuTitle')
     number.classList.add('subMenuTitle')
+    numberMessage.classList.add('numberMessage')
     hoursWrapper.classList.add('hoursWrapper')
     facebookWrapper.classList.add('sectionWrapper')
     facebook.classList.add('facebook')

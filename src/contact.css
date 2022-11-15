@@ -1,6 +1,6 @@
 .hoursWrapper{
     display: grid;
-    padding: 1rem;
+    padding: 1rem; 
     grid-template-columns: 1fr;
 
 }
@@ -8,4 +8,8 @@
 .facebook{
     cursor: pointer;
     
+}
+
+.numberMessage{
+    padding: 1rem;
 }
